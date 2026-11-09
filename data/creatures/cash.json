@@ -1,0 +1,33 @@
+{
+  "id": "cash",
+  "no": 1,
+  "name": "現金君",
+  "account": "現金",
+  "english": "Cash",
+  "type": "資產",
+  "emoji": "💰",
+  "normal_balance": "借",
+  "personality": "人緣超好，走到哪都有人想跟它借。",
+  "skill": "週轉：隨時能拿去付款，流動性最強。",
+  "weakness": "放著不動會被通膨慢慢啃。",
+  "partners": [
+    "sales-revenue",
+    "accounts-receivable"
+  ],
+  "journal": {
+    "desc": "現銷商品一批",
+    "lines": [
+      [
+        "借",
+        "現金",
+        1000
+      ],
+      [
+        "貸",
+        "銷貨收入",
+        1000
+      ]
+    ]
+  },
+  "tip": "現金流量表看的就是它；公司有獲利但現金不夠，一樣會倒。"
+}

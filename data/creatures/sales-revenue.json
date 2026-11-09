@@ -1,0 +1,33 @@
+{
+  "id": "sales-revenue",
+  "no": 5,
+  "name": "銷貨收入龍",
+  "account": "銷貨收入",
+  "english": "Sales Revenue",
+  "type": "收入",
+  "emoji": "🐉",
+  "normal_balance": "貸",
+  "personality": "氣勢驚人，是損益表最亮眼的主角。",
+  "skill": "吐金：每次賣出商品就增加一筆。",
+  "weakness": "怕銷貨退回與折讓扣血。",
+  "partners": [
+    "cash",
+    "accounts-receivable"
+  ],
+  "journal": {
+    "desc": "銷售商品收現",
+    "lines": [
+      [
+        "借",
+        "現金",
+        2000
+      ],
+      [
+        "貸",
+        "銷貨收入",
+        2000
+      ]
+    ]
+  },
+  "tip": "收入在履行義務時認列，與是否收到現金無關。"
+}

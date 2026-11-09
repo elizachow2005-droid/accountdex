@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>帳靈圖鑑 AccountDex</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header class="top"><a href="index.html">📖 帳靈圖鑑 AccountDex</a></header>
+<main><section class="hero"><h1>帳靈圖鑑</h1><p>會計科目不是冷冰冰的名詞，它們是住在你試算表裡的精靈。已收錄 <b>8</b> 隻。</p></section><nav class="filters"><button data-f="all" class="on">全部</button><button data-f="資產">資產</button><button data-f="負債">負債</button><button data-f="權益">權益</button><button data-f="收入">收入</button><button data-f="費用">費用</button></nav><section class="grid"><a class="card asset" data-type="資產" href="creatures/cash.html"><span class="no">No.001</span><span class="emoji">💰</span><h3>現金君</h3><p class="acc">現金</p><span class="badge">資產</span></a><a class="card asset" data-type="資產" href="creatures/accounts-receivable.html"><span class="no">No.002</span><span class="emoji">🧾</span><h3>應收帳款獸</h3><p class="acc">應收帳款</p><span class="badge">資產</span></a><a class="card asset" data-type="資產" href="creatures/inventory.html"><span class="no">No.003</span><span class="emoji">📦</span><h3>存貨熊</h3><p class="acc">存貨</p><span class="badge">資產</span></a><a class="card liab" data-type="負債" href="creatures/accounts-payable.html"><span class="no">No.004</span><span class="emoji">👻</span><h3>應付帳款鬼</h3><p class="acc">應付帳款</p><span class="badge">負債</span></a><a class="card revenue" data-type="收入" href="creatures/sales-revenue.html"><span class="no">No.005</span><span class="emoji">🐉</span><h3>銷貨收入龍</h3><p class="acc">銷貨收入</p><span class="badge">收入</span></a><a class="card expense" data-type="費用" href="creatures/depreciation-expense.html"><span class="no">No.006</span><span class="emoji">🐛</span><h3>折舊費用蟲</h3><p class="acc">折舊費用</p><span class="badge">費用</span></a><a class="card asset" data-type="資產" href="creatures/accumulated-depreciation.html"><span class="no">No.007</span><span class="emoji">🕯️</span><h3>累計折舊幽靈</h3><p class="acc">累計折舊</p><span class="badge">資產 · 備抵</span></a><a class="card expense" data-type="費用" href="creatures/salary-expense.html"><span class="no">No.008</span><span class="emoji">🐝</span><h3>薪資費用蜂</h3><p class="acc">薪資費用</p><span class="badge">費用</span></a></section><script>
+const btns = document.querySelectorAll('.filters button');
+btns.forEach(b => b.addEventListener('click', () => {
+  btns.forEach(x => x.classList.remove('on')); b.classList.add('on');
+  const f = b.dataset.f;
+  document.querySelectorAll('.card').forEach(c => { c.hidden = !(f === 'all' || c.dataset.type === f); });
+}));
+</script></main>
+<footer>以 AGENTS.md 驅動的會計科目圖鑑・僅供學習</footer>
+</body></html>

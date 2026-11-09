@@ -1,0 +1,33 @@
+{
+  "id": "accounts-payable",
+  "no": 4,
+  "name": "應付帳款鬼",
+  "account": "應付帳款",
+  "english": "Accounts Payable",
+  "type": "負債",
+  "emoji": "👻",
+  "normal_balance": "貸",
+  "personality": "安靜纏著你，提醒你欠供應商的錢。",
+  "skill": "賒購：讓你先拿貨、晚點付錢。",
+  "weakness": "到期不付，信用會被扣血。",
+  "partners": [
+    "inventory",
+    "cash"
+  ],
+  "journal": {
+    "desc": "付清供應商貨款",
+    "lines": [
+      [
+        "借",
+        "應付帳款",
+        3000
+      ],
+      [
+        "貸",
+        "現金",
+        3000
+      ]
+    ]
+  },
+  "tip": "應付帳款是營業活動的負債，和銀行借款要分清楚。"
+}

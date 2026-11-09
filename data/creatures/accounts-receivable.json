@@ -1,0 +1,33 @@
+{
+  "id": "accounts-receivable",
+  "no": 2,
+  "name": "應收帳款獸",
+  "account": "應收帳款",
+  "english": "Accounts Receivable",
+  "type": "資產",
+  "emoji": "🧾",
+  "normal_balance": "借",
+  "personality": "耐心十足，總在門口等客戶把錢送來。",
+  "skill": "賒銷：先成交，之後再收錢。",
+  "weakness": "帳齡越長越虛弱，可能變成壞帳。",
+  "partners": [
+    "cash",
+    "sales-revenue"
+  ],
+  "journal": {
+    "desc": "賒銷商品一批",
+    "lines": [
+      [
+        "借",
+        "應收帳款",
+        5000
+      ],
+      [
+        "貸",
+        "銷貨收入",
+        5000
+      ]
+    ]
+  },
+  "tip": "收入認列了不代表收到錢，期末要評估是否需提列預期信用損失。"
+}

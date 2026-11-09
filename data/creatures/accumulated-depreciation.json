@@ -1,0 +1,33 @@
+{
+  "id": "accumulated-depreciation",
+  "no": 7,
+  "name": "累計折舊幽靈",
+  "account": "累計折舊",
+  "english": "Accumulated Depreciation",
+  "type": "資產",
+  "contra": true,
+  "emoji": "🕯️",
+  "normal_balance": "貸",
+  "personality": "附在固定資產身上的反派，越積越多。",
+  "skill": "抵銷：讓固定資產的帳面金額逐年變小。",
+  "weakness": "只會累積，不會單獨存在。",
+  "partners": [
+    "depreciation-expense"
+  ],
+  "journal": {
+    "desc": "年底提列折舊",
+    "lines": [
+      [
+        "借",
+        "折舊費用",
+        1200
+      ],
+      [
+        "貸",
+        "累計折舊",
+        1200
+      ]
+    ]
+  },
+  "tip": "它屬資產類，但是貸方餘額；成本減累計折舊才是帳面金額。"
+}

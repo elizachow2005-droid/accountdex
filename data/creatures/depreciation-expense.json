@@ -1,0 +1,32 @@
+{
+  "id": "depreciation-expense",
+  "no": 6,
+  "name": "折舊費用蟲",
+  "account": "折舊費用",
+  "english": "Depreciation Expense",
+  "type": "費用",
+  "emoji": "🐛",
+  "normal_balance": "借",
+  "personality": "默默啃食，每期啃一小口設備。",
+  "skill": "分攤：把設備成本分散到各使用年度。",
+  "weakness": "它不花現金，常被誤以為會讓現金減少。",
+  "partners": [
+    "accumulated-depreciation"
+  ],
+  "journal": {
+    "desc": "年底提列折舊",
+    "lines": [
+      [
+        "借",
+        "折舊費用",
+        1200
+      ],
+      [
+        "貸",
+        "累計折舊",
+        1200
+      ]
+    ]
+  },
+  "tip": "折舊是成本分攤，不是資產價值評估。"
+}
